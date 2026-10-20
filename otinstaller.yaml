@@ -21,7 +21,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/tlsx@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/tlsx@sha256:7400c92ea5160c284d49fb844ac381d7d7774cf8419dfa146f0d1f75bf993dde
   platforms: [linux/amd64, linux/arm64]
   command: ["tlsx", "-u", "{host}", "-silent", "-json", "-san", "-cn", "-so", "-duc"]
   output_format: jsonl
