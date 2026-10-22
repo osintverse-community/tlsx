@@ -3,7 +3,7 @@
 schema: 1
 name: tlsx
 namespace: osintverse-community
-version: 1.4.0
+version: 1.4.1
 summary: "Reads a server's TLS certificate: names it covers, issuer, validity, fingerprints and JARM"
 readme: README.md
 license: MIT
@@ -21,7 +21,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/tlsx@sha256:7400c92ea5160c284d49fb844ac381d7d7774cf8419dfa146f0d1f75bf993dde
+  image: ghcr.io/osintverse-community/tlsx@sha256:adcd95c0604f879795214f0beca4c49f5117fa9c80957105a1390edc8c529955
   platforms: [linux/amd64, linux/arm64]
   command: ["tlsx", "-u", "{host}", "-silent", "-json", "-duc"]
   output_format: jsonl
